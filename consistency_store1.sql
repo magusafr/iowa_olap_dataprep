@@ -2,12 +2,12 @@
 SELECT 
   store_number,
   COUNT(DISTINCT(store_name)) AS total_store_name,
-  COUNT(DISTINCT(address)) AS total_store_address,
-  COUNT(DISTINCT(city)) AS total_store_address,
-  COUNT(DISTINCT(zip_code)) AS total_store_zip_code,
+  COUNT(DISTINCT(address)) AS total_address,
+  COUNT(DISTINCT(city)) AS total_city,
+  COUNT(DISTINCT(zip_code)) AS total_zip_code,
   COUNT(DISTINCT(store_location)) AS total_store_location,
-  COUNT(DISTINCT(county_number)) AS total_store_anumber,
-  COUNT(DISTINCT(county)) AS total_store_county
+  COUNT(DISTINCT(county_number)) AS total_county_number,
+  COUNT(DISTINCT(county)) AS total_county
 FROM 
 	iowa_drink_sales
 GROUP BY
