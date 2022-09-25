@@ -1,6 +1,6 @@
 -- Data preparation clean data zip code
 SELECT store_number,
-       COUNT(DISTINCT(store_name)) AS total_store__name,
+       COUNT(DISTINCT(store_name)) AS total_store_name,
        COUNT(DISTINCT(address)) AS total_address,
        COUNT(DISTINCT(city)) AS total_city,
        COUNT(DISTINCT(zip_code)) AS total_zip_code,
