@@ -17,7 +17,7 @@ WHERE item_number IN (SELECT item_number
 							COUNT(DISTINCT(category_name)) > 1 OR
 							COUNT(DISTINCT(category)) > 1
 						ORDER BY 
-							total_item_description DESC, item_number;
+							total_item_description DESC, item_number
 						)A
 			)
 ORDER BY item_number;
